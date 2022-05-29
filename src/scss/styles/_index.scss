@@ -51,6 +51,10 @@
 .news-list {
     padding-left: 17px;
     color: #68B5FB;
+
+    a {
+        color: var(--color-Dark);
+    }
 }
 
 .border-right {
