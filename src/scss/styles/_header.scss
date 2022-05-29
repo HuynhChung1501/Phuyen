@@ -1,0 +1,160 @@
+:root {
+    --Brand-color: #027298;
+    --active: #025F7F;
+}
+
+.active {
+    background-color: var(--active);
+}
+
+.header {
+    width: 1140px;
+    margin: 0 auto;
+    background-color: bisque;
+
+    .header-top {
+        height: 28px;
+        background-color: #EBF7FF;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-top_icon {
+            // background-image: url('../../images/content/Vector.png');
+            width: 16px;
+            margin-right: 6px;
+        }
+
+        .header-top_date {
+            font-weight: 400;
+            font-size: 12px;
+            color: #999999;
+        }
+
+        .header-top_time {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+            color: #454545;
+        }
+
+        .header-top_text {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 140%;
+            color: #454545;
+        }
+    }
+
+    .header-baner {
+        // background-image: url('images/content/Rectangle13.png');
+        position: relative;
+        height: 132px;
+        left: 0px;
+        top: 0px;
+
+        .header-baner_logo {
+            width: 100px;
+            height: 100px;
+            // background-image: url('images/content/Ellipse2.png');
+            background-size: 100px;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+
+        }
+
+        .header-baner_title {
+            color: var(--Brand-color);
+            font-weight: 700;
+            font-size: 36px;
+            letter-spacing: -1px;
+            line-height: 138%;
+            text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            position: absolute;
+            left: 130px;
+            top: 34px;
+
+        }
+    }
+
+    .header-menu {
+        display: flex;
+        height: 42px;
+        justify-content: space-between;
+        background-color: var(--Brand-color);
+        align-items: center;
+
+
+        .header-nav {
+
+            .header-navbar_nav {
+                display: flex;
+                margin-bottom: 0;
+                padding-left: 0;
+                height: 42px;
+
+                .header-list {
+                    list-style: none;
+                    line-height: 42px;
+
+                    &:hover {
+                        background-color: #025F7F;
+                    }
+
+                    .nav-link {
+                        padding: 0 16px;
+                        font-weight: 700;
+                        height: 100%;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        display: block;
+
+                        img {
+                            width: 16px;
+                            display: inline-block;
+                            vertical-align: baseline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .heder-search {
+
+            .heder-search_form {}
+
+            .heder-search_input {
+                font-size: 14px;
+                width: 208px;
+
+                &:focus {
+                    border-color: none !important;
+                    box-shadow: none;
+                }
+
+                &::placeholder {
+                    font-size: 14px;
+                    color: #999999;
+                }
+            }
+
+            .heder-search_btn {
+                width: 30px;
+                height: 30px;
+                background-color: #01394C;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 3px 8px;
+                gap: 10px;
+                border: none;
+                border-radius: 4px;
+            }
+        }
+    }
+}
